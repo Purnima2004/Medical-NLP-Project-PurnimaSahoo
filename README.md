@@ -1,6 +1,6 @@
-# 🩺 Medical NLP Pipeline – Physician–Patient Conversation Analysis
+# Medical NLP Pipeline – Physician–Patient Conversation Analysis
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements a Medical Natural Language Processing (NLP) pipeline to analyze physician–patient conversation transcripts and automatically generate structured clinical insights.
 
@@ -12,7 +12,7 @@ The project is divided into three core components:
 
 The objective is to demonstrate how rule-based NLP, transformer-based models, and large language models (LLMs) can be combined to solve real-world healthcare documentation problems in a safe, explainable, and structured manner.
 
-## 📁 Project Format
+## Project Format
 
 This project is implemented as a Jupyter Notebook (`.ipynb`).
 
@@ -23,20 +23,20 @@ Because the project is notebook-based:
 *   Users can download the notebook and run it locally using an IDE and terminal
 *   All code, explanations, and outputs are contained in a single file
 
-## ⚙️ System Requirements
+## System Requirements
 
-### ✅ Python Version (Important)
+### Python Version (Important)
 
 This project uses **spaCy**, which currently has compatibility limitations with newer Python versions.
 
-**✔ Supported Python versions:**
+** Supported Python versions:**
 *   Python 3.11
 *   Python 3.12
 
-**❌ Not supported:**
+** Not supported:**
 *   Python 3.13 and above (spaCy models will fail to install or load)
 
-**⚠️ Please ensure you are using Python 3.11 or 3.12 before installing dependencies.**
+** Please ensure you are using Python 3.11 or 3.12 before installing dependencies.**
 
 ##  Libraries & Tools Used
 
@@ -108,24 +108,24 @@ This mirrors real-world clinical documentation systems, where AI assists draftin
 
 ## Installation Instructions
 
-### 1️⃣ Create a Virtual Environment (Recommended)
+### 1️. Create a Virtual Environment (Recommended)
 ```bash
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
 ```
 
-### 2️⃣ Install Required Libraries
+### 2️. Install Required Libraries
 ```bash
 pip install spacy transformers torch google-generativeai
 ```
 
-### 3️⃣ Install spaCy Model
+### 3️. Install spaCy Model
 ```bash
 python -m spacy download en_core_web_sm
 ```
 
-### 4️⃣ Google Gemini Setup (For SOAP Generation)
+### 4️. Google Gemini Setup (For SOAP Generation)
 This project uses **Google Generative AI (Gemini)**. You must provide a valid Google API Key.
 
 In **Google Colab**, the key is accessed using:
@@ -136,7 +136,7 @@ userdata.get("GOOGLE_API_KEY")
 
 For **local usage**, you may set it as an environment variable.
 
-## 🚀 Running the Project
+##  Running the Project
 
 ### Option 1: Google Colab
 1.  Upload the `.ipynb` file
@@ -152,7 +152,7 @@ jupyter notebook
     *   Correct Python version selected
     *   Virtual environment activated
 
-## 🧠 Project Architecture Summary
+##  Project Architecture Summary
 
 | Component | Approach | Reason |
 | :--- | :--- | :--- |
